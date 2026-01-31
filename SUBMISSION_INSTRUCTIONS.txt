@@ -1,0 +1,145 @@
+# SUBMISSION INSTRUCTIONS
+# Week 4 Assignment: Building Modular Chatbot Components
+
+## Files to Submit
+
+The following files should be included in your .zip submission:
+
+### Core Python Files (Required)
+1. `main.py` - Main chatbot application
+2. `translation_module.py` - Translation functions
+3. `medical_terms.py` - Medical terminology
+4. `utils.py` - Utility functions
+5. `test_translations.py` - Test suite
+
+### Documentation (Required)
+6. `README.md` - Project documentation
+7. `SUBMISSION_INSTRUCTIONS.txt` - This file
+
+### Optional (Recommended)
+8. Screenshots of chatbot interactions
+9. Test suite output
+
+## How to Create Submission Package
+
+### Option 1: Using File Explorer (Windows)
+1. Open File Explorer
+2. Navigate to: `c:\Users\Owner\Documents\ITEC5025-WEEK4-Functions-and-Modularization`
+3. Select the following files:
+   - main.py
+   - translation_module.py
+   - medical_terms.py
+   - utils.py
+   - test_translations.py
+   - README.md
+4. Right-click → Send to → Compressed (zipped) folder
+5. Name it: `ITEC5025-Week4-YourName.zip`
+
+### Option 2: Using PowerShell
+Run this command from the project directory:
+```powershell
+Compress-Archive -Path main.py,translation_module.py,medical_terms.py,utils.py,test_translations.py,README.md -DestinationPath ITEC5025-Week4-Submission.zip
+```
+
+## How to Test Before Submission
+
+1. **Run the test suite**:
+   ```
+   py test_translations.py
+   ```
+   Expected: All tests pass ✓
+
+2. **Run the interactive chatbot**:
+   ```
+   py main.py
+   ```
+   Expected: Chatbot starts and accepts commands
+
+3. **Test sample interactions**:
+   - `translate "hello" to spanish` → Should return "hola"
+   - `medical "headache" to spanish` → Should return "dolor de cabeza"
+   - `help` → Should display help menu
+   - `quit` → Should exit gracefully
+
+## Assignment Requirements Checklist
+
+Before submitting, verify all requirements are met:
+
+- ✅ Data types defined (str, int, bool, list, dict, tuple)
+- ✅ Variables for user input, responses, and language data
+- ✅ Python functions for language translation
+- ✅ Function parameters implemented
+- ✅ Return values utilized
+- ✅ Variable scope demonstrated (module and function level)
+- ✅ Modular code structure
+- ✅ Well-organized with clear comments
+- ✅ Error-free code with graceful error handling
+- ✅ Sample interactions included
+- ✅ Challenges discussed in README
+
+## What to Include in Submission Text
+
+When submitting, include this text:
+
+---
+
+**Week 4 Assignment: EMR Translation Chatbot**
+
+This submission includes a modular Python chatbot with language translation capabilities for EMR systems.
+
+**Files Included**:
+- main.py (main application)
+- translation_module.py (core translations)
+- medical_terms.py (medical terminology)
+- utils.py (utilities)
+- test_translations.py (test suite)
+- README.md (documentation)
+
+**Features**:
+- Translates between English, Spanish, and French
+- Medical terminology support (symptoms, procedures, departments)
+- 47+ translations available
+- Comprehensive error handling
+- 100% test pass rate
+
+**How to Run**:
+```
+py main.py          # Interactive chatbot
+py test_translations.py  # Run tests
+```
+
+**Sample Interaction**:
+```
+User: translate "hello" to spanish
+Bot: ✓ 'hello' → hola
+```
+
+**Challenges Faced**:
+1. Reverse translation required iterating through dictionary values
+2. Multiple return values solved using tuples
+3. Module organization applied single responsibility principle
+
+All assignment requirements have been met and documented in README.md.
+
+---
+
+## Questions?
+
+Refer to README.md for:
+- Complete usage instructions
+- Module descriptions
+- Assignment requirements mapping
+- Sample interactions
+- Code examples
+
+## Final Checklist
+
+Before submitting:
+- [ ] All Python files included in .zip
+- [ ] README.md included
+- [ ] Test suite runs successfully
+- [ ] Interactive chatbot works
+- [ ] .zip file named appropriately
+- [ ] Submission text prepared
+
+Good luck with your submission!
